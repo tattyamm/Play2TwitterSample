@@ -1,0 +1,25 @@
+@(twitterjson:String)
+
+@import helper._
+
+@main("twitter outhテストページ") {
+
+<h1>twitter outhテストページ</h1>
+
+<h2>ログイン・ログアウト</h2>
+<ul>
+    <li>
+        <a href="./auth">ログイン</a>
+    </li>
+    <li>
+        <a href="./logout">ログアウト</a>
+    </li>
+</ul>
+
+<h2>APIから情報取得</h2>
+タイムライン取得<br/>
+<div style="border-style: solid;">@twitterjson</div>
+
+}
+
+
